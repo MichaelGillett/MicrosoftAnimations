@@ -1,0 +1,435 @@
+@keyframes squareToSmallSquare {
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  50% {
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+}
+@keyframes squareToSmallCircle {
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  50% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+}
+@keyframes moveTopLeftClockwise {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 55px;
+    top: 0;
+  }
+  50% {
+    left: 55px;
+    top: 55px;
+  }
+  75% {
+    left: 0;
+    top: 55px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+@keyframes moveTopRightClockwise {
+  0% {
+    left: 55px;
+    top: 0;
+  }
+  25% {
+    left: 55px;
+    top: 55px;
+  }
+  50% {
+    left: 0;
+    top: 55px;
+  }
+  75% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 55px;
+    top: 0;
+  }
+}
+@keyframes moveBottomRightClockwise {
+  0% {
+    left: 55px;
+    top: 55px;
+  }
+  25% {
+    left: 0;
+    top: 55px;
+  }
+  50% {
+    left: 0;
+    top: 0;
+  }
+  75% {
+    left: 55px;
+    top: 0;
+  }
+  100% {
+    left: 55px;
+    top: 55px;
+  }
+}
+@keyframes moveBottomLeftClockwise {
+  0% {
+    left: 0;
+    top: 55px;
+  }
+  25% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 55px;
+    top: 0;
+  }
+  75% {
+    left: 55px;
+    top: 55px;
+  }
+  100% {
+    left: 0;
+    top: 55px;
+  }
+}
+@keyframes moveCircleTopLeftClockwise {
+  0% {
+    transform: rotate(0deg) translateX(-30px) translateY(-30px);
+  }
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  30% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(0deg) translateX(-30px) translateY(-30px);
+  }
+  70% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(360deg) translateX(-30px) translateY(-30px);
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30px) translateY(-30px);
+  }
+}
+@keyframes moveCircleTopRightClockwise {
+  0% {
+    transform: rotate(0deg) translateX(30px) translateY(-30px);
+  }
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  30% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(0deg) translateX(30px) translateY(-30px);
+  }
+  70% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(360deg) translateX(30px) translateY(-30px);
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) translateY(-30px);
+  }
+}
+@keyframes moveCircleBottomRightClockwise {
+  0% {
+    transform: rotate(0deg) translateX(30px) translateY(30px);
+  }
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  30% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(0deg) translateX(30px) translateY(30px);
+  }
+  70% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(360deg) translateX(30px) translateY(30px);
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) translateY(30px);
+  }
+}
+@keyframes moveCircleBottomLeftClockwise {
+  0% {
+    transform: rotate(0deg) translateX(-30px) translateY(30px);
+  }
+  20% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  30% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(0deg) translateX(-30px) translateY(30px);
+  }
+  70% {
+    border-radius: 100%;
+    height: 20px;
+    margin: 15px 0 0 15px;
+    width: 20px;
+    transform: rotate(360deg) translateX(-30px) translateY(30px);
+  }
+  80% {
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+    width: 50px;
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30px) translateY(30px);
+  }
+}
+body {
+  color: #fff;
+  background: #0B4B6F;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  font-weight: 100;
+}
+
+a {
+  color: #fff;
+}
+
+p {
+  font-weight: 100;
+  margin: 10px auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+footer {
+  font-size: 12px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+section {
+  display: inline-block;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+.animationContainer {
+  margin: 0 auto;
+  max-width: 105px;
+  position: relative;
+  width: 100%;
+}
+
+.square {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.square1 {
+  background: #F25022;
+  left: 0;
+  top: 0;
+}
+.square2 {
+  background: #7FBA00;
+  left: 55px;
+  top: 0;
+}
+.square3 {
+  background: #01A4EF;
+  left: 0;
+  top: 55px;
+}
+.square4 {
+  background: #FFB901;
+  left: 55px;
+  top: 55px;
+}
+
+.simpleLoader1.squareAnimation .square1 {
+  animation: squareToSmallSquare 2s ease infinite;
+}
+.simpleLoader1.squareAnimation .square2 {
+  animation: squareToSmallSquare 2s ease infinite;
+}
+.simpleLoader1.squareAnimation .square3 {
+  animation: squareToSmallSquare 2s ease infinite;
+}
+.simpleLoader1.squareAnimation .square4 {
+  animation: squareToSmallSquare 2s ease infinite;
+}
+.simpleLoader1.circleAnimation .square1 {
+  animation: squareToSmallCircle 2s ease infinite;
+}
+.simpleLoader1.circleAnimation .square2 {
+  animation: squareToSmallCircle 2s ease infinite;
+}
+.simpleLoader1.circleAnimation .square3 {
+  animation: squareToSmallCircle 2s ease infinite;
+}
+.simpleLoader1.circleAnimation .square4 {
+  animation: squareToSmallCircle 2s ease infinite;
+}
+
+.simpleLoader2.squareAnimation .square1 {
+  animation: squareToSmallSquare 2s ease infinite;
+  animation-delay: 0s;
+}
+.simpleLoader2.squareAnimation .square2 {
+  animation: squareToSmallSquare 2s ease infinite;
+  animation-delay: 0.25s;
+}
+.simpleLoader2.squareAnimation .square3 {
+  animation: squareToSmallSquare 2s ease infinite;
+  animation-delay: 0.5s;
+}
+.simpleLoader2.squareAnimation .square4 {
+  animation: squareToSmallSquare 2s ease infinite;
+  animation-delay: 0.75s;
+}
+.simpleLoader2.circleAnimation .square1 {
+  animation: squareToSmallCircle 2s ease infinite;
+  animation-delay: 0s;
+}
+.simpleLoader2.circleAnimation .square2 {
+  animation: squareToSmallCircle 2s ease infinite;
+  animation-delay: 0.25s;
+}
+.simpleLoader2.circleAnimation .square3 {
+  animation: squareToSmallCircle 2s ease infinite;
+  animation-delay: 0.5s;
+}
+.simpleLoader2.circleAnimation .square4 {
+  animation: squareToSmallCircle 2s ease infinite;
+  animation-delay: 0.75s;
+}
+
+.slidingLoader1.squareAnimation .square1 {
+  animation: moveTopLeftClockwise 8s ease infinite;
+  animation-fill-mode: both;
+}
+.slidingLoader1.squareAnimation .square2 {
+  animation: moveTopRightClockwise 8s ease infinite;
+  animation-fill-mode: both;
+}
+.slidingLoader1.squareAnimation .square3 {
+  animation: moveBottomLeftClockwise 8s ease infinite;
+  animation-fill-mode: both;
+}
+.slidingLoader1.squareAnimation .square4 {
+  animation: moveBottomRightClockwise 8s ease infinite;
+  animation-fill-mode: both;
+}
+
+.slidingLoader2.circleAnimation .square1 {
+  animation: moveCircleTopLeftClockwise 4s ease infinite;
+  animation-fill-mode: both;
+  left: 30px;
+  top: 30px;
+}
+.slidingLoader2.circleAnimation .square2 {
+  animation: moveCircleTopRightClockwise 4s ease infinite;
+  animation-fill-mode: both;
+  left: 25px;
+  top: 30px;
+}
+.slidingLoader2.circleAnimation .square3 {
+  animation: moveCircleBottomLeftClockwise 4s ease infinite;
+  animation-fill-mode: both;
+  left: 30px;
+  top: 25px;
+}
+.slidingLoader2.circleAnimation .square4 {
+  animation: moveCircleBottomRightClockwise 4s ease infinite;
+  animation-fill-mode: both;
+  left: 25px;
+  top: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,224 @@
+@import "variables";
+@import "mixins";
+
+@import "animations";
+
+body{
+    color: #fff;
+	background: $colorDarkBlue;
+	font-family: $primaryFont;
+    margin: 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+	color: #fff;
+	font-weight: 100;
+}
+
+a {
+    color: #fff;
+}
+
+p {
+    font-weight: 100;
+    margin: 10px auto;
+    max-width: 800px;
+    width: 90%;
+}
+
+footer {
+    font-size: 12px;
+	height: 150px;
+    margin: {
+        top: 50px;
+    }
+}
+
+section {
+    display: inline-block;
+	height: 200px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+}
+
+.animationContainer {
+	margin: 0 auto;
+	max: {
+		width: 105px;
+	}
+	position: relative;
+	width: 100%;
+}
+
+.square {
+	
+	height: $heightSquare;
+	position: absolute;
+	width: $widthSquare;
+	
+	&1 {
+		background: $colorRed;
+		left: 0;
+		top: 0;
+	}
+	
+	&2 {
+		background: $colorGreen;
+		left: $offsetSquare;
+		top: 0;
+	}
+	
+	&3 {
+		background: $colorBlue;
+		left: 0;
+		top: $offsetSquare;
+	}
+	
+	&4 {
+		background: $colorYellow;
+		left: $offsetSquare;
+		top: $offsetSquare;
+	}
+}
+
+.simpleLoader1 {
+	&.squareAnimation {
+		.square1{
+			animation: squareToSmallSquare 2s ease infinite;
+		}
+		
+		.square2{
+			animation: squareToSmallSquare 2s ease infinite;
+		}
+		
+		.square3{
+			animation: squareToSmallSquare 2s ease infinite;
+		}
+		
+		.square4{
+			animation: squareToSmallSquare 2s ease infinite;
+		}
+	}
+	
+	&.circleAnimation {
+		.square1{
+			animation: squareToSmallCircle 2s ease infinite;
+		}
+		
+		.square2{
+			animation: squareToSmallCircle 2s ease infinite;
+		}
+		
+		.square3{
+			animation: squareToSmallCircle 2s ease infinite;
+		}
+		
+		.square4{
+			animation: squareToSmallCircle 2s ease infinite;
+		}
+	}
+}
+
+.simpleLoader2 {
+	&.squareAnimation {
+		.square1{
+			animation: squareToSmallSquare 2s ease infinite;
+			animation-delay: 0s;
+		}
+		
+		.square2{
+			animation: squareToSmallSquare 2s ease infinite;
+			animation-delay: 0.25s;
+		}
+		
+		.square3{
+			animation: squareToSmallSquare 2s ease infinite;
+			animation-delay: 0.5s;
+		}
+		
+		.square4{
+			animation: squareToSmallSquare 2s ease infinite;
+			animation-delay: 0.75s;
+		}
+	}
+	
+	&.circleAnimation {
+		.square1{
+			animation: squareToSmallCircle 2s ease infinite;
+			animation-delay: 0s;
+		}
+		
+		.square2{
+			animation: squareToSmallCircle 2s ease infinite;
+			animation-delay: 0.25s;
+		}
+		
+		.square3{
+			animation: squareToSmallCircle 2s ease infinite;
+			animation-delay: 0.5s;
+		}
+		
+		.square4{
+			animation: squareToSmallCircle 2s ease infinite;
+			animation-delay: 0.75s;
+		}
+	}
+}
+
+.slidingLoader1 {
+	&.squareAnimation {
+		.square1 {
+			animation: moveTopLeftClockwise 8s ease infinite;
+			animation-fill-mode: both;
+		}
+		
+		.square2 {
+			animation: moveTopRightClockwise 8s ease infinite;
+			animation-fill-mode: both;
+		}
+		
+		.square3 {
+			animation: moveBottomLeftClockwise 8s ease infinite;
+			animation-fill-mode: both;
+		}
+		
+		.square4 {
+			animation: moveBottomRightClockwise 8s ease infinite;
+			animation-fill-mode: both;
+		}
+	}
+}
+
+.slidingLoader2 {
+	&.circleAnimation {
+		.square1 {
+			animation: moveCircleTopLeftClockwise 4s ease infinite;
+			animation-fill-mode: both;
+			left: 30px;
+			top: 30px;
+		}
+		
+		.square2 {
+			animation: moveCircleTopRightClockwise 4s ease infinite;
+			animation-fill-mode: both;
+			left: 25px;
+			top: 30px;
+		}
+		
+		.square3 {
+			animation: moveCircleBottomLeftClockwise 4s ease infinite;
+			animation-fill-mode: both;
+			left: 30px;
+			top: 25px;
+		}
+		
+		.square4 {
+			animation: moveCircleBottomRightClockwise 4s ease infinite;
+			animation-fill-mode: both;
+			left: 25px;
+			top: 25px;
+		}
+	}
+}
